@@ -3,5 +3,11 @@ project(StrCutMgr)
 
 set(CMAKE_CXX_STANDARD 11)
 
-set(SOURCE_FILES main.cpp)
-add_executable(StrCutMgr ${SOURCE_FILES})
+set(SOURCE
+        Source/StrCutMgr.cpp
+        Source/StrCutMgr.h
+        )
+
+add_executable(StrCutMgr main.cpp
+        ${SOURCE}
+        )
